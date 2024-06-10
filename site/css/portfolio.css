@@ -141,6 +141,19 @@ p {
     height: 10rem;
     border-radius: 10rem;
   }
+
+  .skills--title {}
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column {
+    flex: 1;
+    height: 60vh;
+  }
 }
 
 @media (max-width: 700px) {
