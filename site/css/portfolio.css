@@ -79,6 +79,24 @@ p {
   background-color: var(--lightWildColor);
 }
 
+#name-button{
+  background-color: #dbb7d8;
+  border: white solid 1px;
+  border-radius: 4px;
+  color: var(--cardColor);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#name-button:hover{
+  background-color: #e6ecf8;
+  color: black;
+}
+
+.whiteTxt {
+  color: white !important;
+}
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
@@ -167,3 +185,4 @@ p {
     grid-column-end: 3;
   }
 }
+
