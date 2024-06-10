@@ -1,3 +1,58 @@
+@media screen and (min-width: 700px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .skills--title {
+    position: absolute;
+    width: 100%;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+
+.first-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .desktop img {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+a:not([href]) {
+  opacity: 0.3;
+}
+
+/* .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+/* .projects > h2,
+.projects > p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
 :root {
   --radius: 12px;
 
@@ -67,7 +122,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
