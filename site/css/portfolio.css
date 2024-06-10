@@ -108,3 +108,8 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
