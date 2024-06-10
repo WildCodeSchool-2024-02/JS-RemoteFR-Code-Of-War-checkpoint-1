@@ -12,10 +12,19 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 function sumArr(arrayA, arrayB) {
   // Your code here !
   const newArray =[];
-  for(let i = 0; i <= arrayA.length; i++){
-    newArray.push((arrayA[i] * 1) + (arrayB[i] * 1).toString());
+  if(arrayA.length >= arrayB.length){
+    for(let i = 0; i <= arrayA.length; i++){
+      const result = ((arrayA[i] || 0) * 1) + ((arrayB[i] || 0) * 1);
+      newArray.push(result.toString());
+    }
+    return newArray
+  }else if(arrayA.length < arrayB.length){
+    for(let i = 0; i <= arrayB.length; i++){
+      const result = ((arrayA[i] || 0) * 1) + ((arrayB[i] || 0) * 1);
+      newArray.push(result.toString());
+    }
+    return newArray
   }
-  return newArray
 }
 
 module.exports = sumArr;
