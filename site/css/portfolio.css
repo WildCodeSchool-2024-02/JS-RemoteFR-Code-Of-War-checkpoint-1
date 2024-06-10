@@ -116,6 +116,10 @@ p {
   align-items: center;
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
 @media (min-width: 700px) {
   header>nav {
     display: flex;
@@ -136,10 +140,23 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     
   }
+  .title_para {
+    width: 100%;
+    text-align: center;
+  }
+  
+  }
 
-}
+
 
 @media (max-width: 700px) {
   .desktop {
