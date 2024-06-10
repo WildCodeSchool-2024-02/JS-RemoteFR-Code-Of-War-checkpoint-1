@@ -130,7 +130,7 @@ p {
   }
   .skills{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse;  /* J'avais fait le step 6 par reflex */
   }
   .column{
     width: 50%;
