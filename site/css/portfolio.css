@@ -10,7 +10,61 @@
 
   --textAlign: center;
 }
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  line-height: 1.5rem;
+}
 
+/*** grand ecran****/
+@media screen and (min-width:701px) {
+  header>nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main>.myFirstBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main>.myFirstBanner>.firstBanner{
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  main>.myFirstBanner>.firstBanner>div{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+  }
+  main>.skills{
+    display: flex;
+    justify-content: center;
+  }
+  main>.skills>.column{
+    width: 800px;
+    height: auto;
+  }
+}
+
+/*** prtit ecran***/
+@media screen and (max-width:700px) {
+  main>article>section>.desktop{
+    display: none;
+  }
+  main>.skills{
+    display: block;
+
+  }
+}
+
+header>nav{
+  display: flex;
+}
 img {
   max-width: 100%;
 }
