@@ -123,6 +123,9 @@ p {
   border-radius: 10rem;
 }
 
+.disabled {
+  opacity: 0.5;
+}
 
 @media (min-width: 700px) {
   header>nav {
