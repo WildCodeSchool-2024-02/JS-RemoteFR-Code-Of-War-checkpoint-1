@@ -10,7 +10,13 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 */
 
 function sumArr(arrayA, arrayB) {
-  // Your code here !
+  if (arrayA.length > arrayB.length) {
+    return arrayA.map((number, index) => String(Number(number) + (index in arrayB ? Number(arrayB[index]) : 0)));
+  } else if (arrayB.length > arrayA.length) {
+    return arrayB.map((number, index) => String(Number(number) + (index in arrayA ? Number(arrayA[index]) : 0)));
+  } else {
+    return arrayA.map((number, index) => String(Number(number) + Number(arrayB[index])));
+  }
 }
 
 module.exports = sumArr;
