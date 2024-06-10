@@ -82,7 +82,7 @@ p {
 .column:last-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-}
+  }
 
 .column ul {
   list-style: none;
