@@ -1,2 +1,6 @@
-const avatar = document.querySelector('.avatar-bis');
-avatar.src = "site/image/avatar.svg";
+const avatarImg = document.getElementById("avatar-bis");
+
+avatarImg.addEventListener("click", switchAvatar);
+function switchAvatar(){
+    avatarImg.src = "image/avatar.svg"
+}
