@@ -7,7 +7,7 @@ const button = document.createElement("button");
 button.classList.add("buttonChange");
 button.textContent = "Modify text and color";
 button.style.color = 'white';
-button.style.backgroundColor = `var(--wildColor)`;
+button.style.backgroundColor = `transparent`;
 button.style.borderColor = 'white';
 secondBanner.appendChild(button);
 
@@ -18,8 +18,10 @@ function changeTexteAndColor(promptText) {
 }
 
 function changeBackground(promptText) {
-    let pinkBackground = document.querySelector(".pink-bg");
-    pinkBackground.style.backgroundColor = promptText;
+    let pinkBackground = document.querySelectorAll(".pink-bg");
+    pinkBackground.forEach(pinkBackground => {
+        pinkBackground.style.backgroundColor = promptText;
+    })
 }
 
 button.addEventListener("click", () => {
