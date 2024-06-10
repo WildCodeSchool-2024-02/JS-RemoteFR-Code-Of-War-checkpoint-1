@@ -19,6 +19,14 @@ exemple du résultat final :
 
 function theaterSieges() {
   // Your code here !
+  const rows = 26;
+  const seatsPerRow = 100;
+  
+  return Array.from({ length: rows }, (_, rowIndex) => 
+    Array.from({ length: seatsPerRow }, (_, seatIndex) => 
+      `${rowIndex + 1}-${seatIndex + 1}`
+    )
+  );
 }
 
 module.exports = theaterSieges;
