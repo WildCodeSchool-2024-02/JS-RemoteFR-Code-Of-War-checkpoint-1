@@ -127,6 +127,16 @@ p {
   background-color: var(--lightWildColor);
   color: #fff;
 }
+#btn-submit{
+  border-radius: 8px;
+  border: 2px solid #fff ;
+  background-color: var(--lightWildColor);
+  color: #fff;
+}
+#input-back{
+  border-radius: 8px;
+  border: 2px solid var(--lightWildColor) ;
+}
 
 @media screen and (min-width:700px){
   nav{

@@ -67,4 +67,19 @@ newBtn.addEventListener('click', () => {
             textsModify[i].textContent = "Terminal";
         }
     }
+});
+
+// STEP 7
+
+const ulDevTools = document.querySelector('#ul-tools');
+const input = document.querySelector('#input-back');
+const btnInput = document.querySelector('#btn-submit');
+
+btnInput.addEventListener('click', () =>{
+    const userTools = input.value; 
+
+    const newLi = document.createElement('li');
+    newLi.textContent = `${userTools}`;
+    ulDevTools.appendChild(newLi);
+    input.value = "";
 })
