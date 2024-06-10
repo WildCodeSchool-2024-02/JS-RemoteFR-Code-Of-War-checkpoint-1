@@ -7,7 +7,7 @@ function switchAvatar(){
     avatarImg.src = "image/avatar.svg"
 }
 
-// Step 2
+// Step 2 to 4
 const nameButton = document.getElementById("name-button");
 const changingName = document.getElementById("firstname");
 const descriptionSection = document.getElementsByClassName("description pink-bg");
@@ -25,4 +25,14 @@ function nameChange(){
         descriptionSection[i].style.backgroundColor = yourColor;
     }
 }
+
+// Step 5
+
+const htmlLinks = document.getElementsByClassName("html-link");
+function linksChange(){
+    for (let i = 0; i < htmlLinks.length ; i++){
+        htmlLinks[i].style.color = "#750ff7";
+    }
+}
+linksChange();
 
