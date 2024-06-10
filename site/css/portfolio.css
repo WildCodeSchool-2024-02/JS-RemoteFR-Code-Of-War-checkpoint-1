@@ -109,6 +109,10 @@ p {
   color: var(--purple);
 }
 
+.disabled{
+  opacity: 0.5;
+}
+
 @media screen and (min-width:700px){
   nav{
     justify-content: space-between;
@@ -134,6 +138,18 @@ p {
   }
   .column{
     width: 50%;
+  }
+  .projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .allBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
