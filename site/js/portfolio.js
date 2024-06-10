@@ -38,6 +38,12 @@ bouttonChange.addEventListener("click", () => {
     background.style.background = newBackground;
     textPink.style.color = newBackground;
 
+
+    const links = document.querySelector("a");
+    links.forEach(element => {
+        links.style.color = newBackground;
+    })
+
 });
 
 const parent = document.querySelector(".pink-bg");

@@ -146,8 +146,13 @@ nav {
 
 }
 
-.projects :nth-child(2) {
+.projects>p:first-of-type {
   display: flex;
+  justify-content: center;
+}
+
+.projects :nth-child(2) {
+
   justify-content: center;
 }
 
@@ -163,4 +168,13 @@ nav {
 
 .purple-text {
   color: var(--purple);
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
 }
