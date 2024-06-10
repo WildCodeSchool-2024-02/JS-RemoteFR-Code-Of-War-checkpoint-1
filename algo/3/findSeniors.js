@@ -34,5 +34,4 @@ function findSeniors(persons) {
 
   return [webDev, dataAnalyst];
 }
-
 module.exports = findSeniors;
