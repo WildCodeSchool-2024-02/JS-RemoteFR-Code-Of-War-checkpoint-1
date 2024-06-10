@@ -11,5 +11,6 @@ function thirdAngle(a, b) {
   const c = angleTotal - (a + b)
   return c
 }
-console.log(thirdAngle(90, 30));
+console.log(thirdAngle(20, 80));
+
 module.exports = thirdAngle;
