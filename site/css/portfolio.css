@@ -140,3 +140,12 @@ p {
     flex-direction: column-reverse;
   }
 }
+
+/* Step 7 */
+
+.box:first-of-type a,
+.box:last-of-type a {
+  opacity: 0.5;
+}
+
+;
