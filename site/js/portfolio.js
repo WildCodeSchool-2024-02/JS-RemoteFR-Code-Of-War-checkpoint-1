@@ -28,13 +28,13 @@ changeButton.addEventListener('click', function () {
         const newColor = prompt('Enter you color');
         if (newColor) {
             const pinkBackgrounds = document.querySelectorAll('.pink-bg');
-            const pinkTexts = document.querySelectorAll('.pink-text');
+            const pinkText = document.querySelectorAll('.pink-text');
 
             pinkBackgrounds.forEach(function (element) {
                 element.style.backgroundColor = newColor;
             });
 
-            pinkTexts.forEach(function (element) {
+            pinkText.forEach(function (element) {
                 element.style.color = newColor;
             });
         }
