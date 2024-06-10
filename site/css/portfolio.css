@@ -11,6 +11,13 @@
   --textAlign: center;
 }
 
+.btnChange {
+  border: var(--styledBorder);
+  margin: calc(var(--gutter) * 1.25);
+  border-radius: var(--radius);
+  box-shadow: var(--styledShadow);
+}
+
 img {
   max-width: 100%;
 }
