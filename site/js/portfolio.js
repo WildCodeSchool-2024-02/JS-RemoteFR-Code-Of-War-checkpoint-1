@@ -33,3 +33,20 @@ descriptionButton.addEventListener("click", () => {
     nameChange.style.color = "white";
 });
 
+const frontButton = document.createElement("button");
+frontButton.classList.add("button");
+frontButton.textContent = "Modify";
+
+const columnClass = document.querySelector(".column:last-child");
+columnClass.appendChild(frontButton);
+
+const frontDevTools = ["VSCode", "Github", "Terminal"];
+
+frontButton.addEventListener("click", () => {
+    const frontDevToolsLi = document.querySelectorAll("#front-dev-tools li");
+    frontDevToolsLi.forEach((li, index) => {
+        li.textContent = frontDevTools[index];
+    });
+
+
+});
