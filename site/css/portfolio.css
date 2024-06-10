@@ -55,6 +55,8 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
 }
 
 .skills--title {
@@ -120,9 +122,14 @@ nav {
   align-items: center;
 }
 
+
 @media screen and (max-width : 700px) {
   .desktop {
     display: none;
+  }
+
+  .skills {
+    flex-direction: column-reverse;
   }
   
 }
