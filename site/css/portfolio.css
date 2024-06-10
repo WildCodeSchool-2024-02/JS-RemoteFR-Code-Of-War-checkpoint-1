@@ -1,14 +1,36 @@
 :root {
   --radius: 12px;
-
   --cardColor: #ffffff;
   --borderColor: #e6ecf8;
   --shadowColor: #e9f0f380;
-
   --styledBorder: var(--borderTemplate) var(--borderColor);
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
-
   --textAlign: center;
+}
+
+
+
+@media screen and (width >= 700px) {
+  body > header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .first-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* J'ai aussi centré la partie avec l'avatar ci-dessus pour les écrans < 700px
+par soucis d'élégance, mais j'ai bien conscience que rien ne m'y obligeait. */
+.first-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 1rem 0;
 }
 
 img {
@@ -32,6 +54,12 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: none;
+}
+@media screen and (width >= 700px) {
+  .desktop{
+    display: block;
+  }
 }
 
 .description {
@@ -55,11 +83,17 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
+
 }
 
-.skills--title {
-  margin: calc(var(--gutter) * -2) 0;
-  text-align: var(--textAlign);
+@media screen and (width >= 700px) {
+  .skills{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  }
 }
 
 .column {
@@ -71,6 +105,12 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+}
+
+@media screen and (width >= 700px) {
+  .column {
+    width: 50vw;
+  }
 }
 
 .column:first-of-type {
@@ -96,8 +136,11 @@ p {
   color: var(--purple);
 }
 
+.disabled{
+  opacity: 40%;
+}
+
 .box {
-  width: 25%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
@@ -107,4 +150,20 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.recent-work-title, .projects > p{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (width >= 700px) {
+  .list-of-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .box:last-child{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
