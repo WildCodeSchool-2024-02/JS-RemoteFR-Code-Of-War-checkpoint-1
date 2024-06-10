@@ -26,3 +26,12 @@ avatarChange.addEventListener("click", () => {
     }
 
   btn.addEventListener("click", () => changeColorName());
+
+
+  /* T_T j'essaie mais je n'y arrive pas */
+  const colorBack = () => {
+    const colorPink = prompt("change la couleur");
+    const newColor = document.getElementsByClassName("pink");
+    newColor = colorPink;
+  }
+  btn.addEventListener("click", () => colorBack());
