@@ -108,3 +108,51 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }  
+}
+@media screen and (min-width: 700px) {
+  .skills {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+  }
+}
+@media screen and (max-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 700px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.projects .disabled {
+  opacity: 0.4;
+}
+@media screen and (min-width: 700px) {
+  
+.projectsList {
+  display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}}
