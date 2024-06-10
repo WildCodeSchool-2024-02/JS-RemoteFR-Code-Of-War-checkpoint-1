@@ -109,7 +109,12 @@ p {
   color: var(--purple);
 }
 
+.skills {
 
+  display: flex;
+  justify-content: center;
+
+}
 
 
 @media screen and (min-width: 700px) {
@@ -134,10 +139,7 @@ p {
   .skills {
 
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
-
-
+    flex-direction: row-reverse;
 
 
 
