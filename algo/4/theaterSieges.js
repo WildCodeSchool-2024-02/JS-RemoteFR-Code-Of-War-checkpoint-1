@@ -17,4 +17,20 @@ exemple du résultat final :
 ]
 */
 
+function theaterSieges() {
+  const places = []
+
+
+  for (let i = 1; i <= 26; i++) {
+    const rangs = []
+    for (let j = 1; j <= 100; j++) {
+      rangs.push(`${i}-${j}`);
+    }
+    places.push(rangs);
+  }
+
+  return places;
+}
+
+
 module.exports = theaterSieges;

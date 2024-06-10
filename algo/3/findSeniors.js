@@ -25,7 +25,6 @@ const persons = [
 
 */
 
-const persons = require("./findSeniors.spec")
 
 function findSeniors(persons) {
   const seniorsWebDev = persons.filter(person => person.job === 'web dev' && person.experience >= 5);
@@ -34,11 +33,6 @@ function findSeniors(persons) {
   const seniorDataAnalyst = persons.filter(person => person.job === 'data analyst' && person.experience >= 5);
 
   return [seniorsWebDev, seniorDataAnalyst]
-
-
-
-
-
 
 }
 
