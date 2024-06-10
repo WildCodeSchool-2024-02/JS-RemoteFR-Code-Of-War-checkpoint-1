@@ -37,8 +37,8 @@ const frontButton = document.createElement("button");
 frontButton.classList.add("button");
 frontButton.textContent = "Modify";
 
-const columnClass = document.querySelector(".column:last-child");
-columnClass.appendChild(frontButton);
+const frontColumn = document.querySelector(".column:last-child");
+frontColumn.appendChild(frontButton);
 
 const frontDevTools = ["VSCode", "Github", "Terminal"];
 
@@ -47,6 +47,28 @@ frontButton.addEventListener("click", () => {
     frontDevToolsLi.forEach((li, index) => {
         li.textContent = frontDevTools[index];
     });
-
-
 });
+
+/* Step 7 */
+
+const backButton = document.createElement("button");
+backButton.classList.add("button");
+backButton.textContent = "Add";
+
+const backInput = document.createElement("input");
+backInput.classList.add("input");
+
+const backColumn = document.querySelector(".column");
+backColumn.appendChild(backInput);
+backColumn.appendChild(backButton);
+
+backButton.addEventListener("click", () => {
+    const inputValue = backInput.value;
+    const newLi = document.createElement("li");
+    newLi.textContent = inputValue;
+    const backDevTools = document.querySelector(".column ul");
+    backDevTools.appendChild(newLi);
+    backInput.value = "";
+});
+
+
