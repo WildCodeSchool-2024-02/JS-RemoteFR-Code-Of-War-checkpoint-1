@@ -9,8 +9,38 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) should return ["4", "11", "
 sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "12", "5", "5"]
 */
 
+
 function sumArr(arrayA, arrayB) {
-  // Your code here !
+
+  const somme = [];
+  let numberArrayA = [];
+  let numberArrayB = [];
+  const maxLength = Math.max(arrayA.length, arrayB.length)
+
+  for (let i = 0; i < maxLength; i++) {
+    if (i < arrayA.length) {
+      numberArrayA.push(parseInt(arrayA[i]));
+    }
+    else {
+      numberArrayA.push(0)
+    }
+
+
+    if (i < arrayB.length) { numberArrayB.push(parseInt(arrayB[i])); }
+    else {
+      numberArrayB.push(0)
+    }
+
+
+    somme.push((numberArrayA[i] + numberArrayB[i]).toString());
+  }
+
+
+
+
+  return somme
+
 }
+
 
 module.exports = sumArr;
