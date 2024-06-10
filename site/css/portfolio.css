@@ -96,6 +96,11 @@ p {
   color: var(--purple);
 }
 
+.projects a.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -107,4 +112,86 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width: 700px) {
+  body header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  body main div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .skills h2 {
+    display: none;
+  }
+
+  .skills .column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  /* .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects h2,p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.projects .box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+} */
+}
+
+.projects .box:last-child {
+  display: flex;
+}
+
+
+}
+
+@media screen and (max-width: 700px) {
+  main section .desktop {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills h2 {
+    display: none;
+  }
+
+  .skills .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+
 }
