@@ -51,6 +51,14 @@ p {
   background-color: var(--lightWildColor);
 }
 
+.bg {
+  background-color: var(--lightWildColor);
+}
+
+.text {
+  color: var(--lightWildColor);
+}
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
@@ -108,3 +116,49 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+/* Benjamin Daniel-Noury Code */
+
+a:not([href]) {
+  opacity: 0.5;
+}
+
+figure.desktop {
+  display: none;
+}
+
+/* Attention ! Pas préciser dans la consigne ! */
+main > section {
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    main > section {
+      text-align: center;
+    }
+
+    main > section > figure.desktop {
+      display: block;
+    }
+
+
+    main > article.skills > section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    main > article.skills > section > section:last-child {
+      grid-row: 1 / 1;
+    }
+
+    main > article.projects > section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
