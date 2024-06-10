@@ -27,6 +27,9 @@ const persons = [
 
 function findSeniors(persons) {
   // Your code here !
+  const dev = devWeb;
+  const data = dataAnalyst;
+  const exp >= 5;
 }
 
 module.exports = findSeniors;

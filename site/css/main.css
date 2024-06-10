@@ -10,7 +10,7 @@
   --radius: 5px;
   --borderTemplate: 1px solid;
 
-  --darkColor : #000000;
+  --darkColor: #000000;
   --textColor: #39424e;
   --wildColor: #f76c6c;
   --lightWildColor: #ffc0cb;
@@ -58,4 +58,4 @@ button:focus {
 
 #firstname {
   color: red;
-}  
+}
