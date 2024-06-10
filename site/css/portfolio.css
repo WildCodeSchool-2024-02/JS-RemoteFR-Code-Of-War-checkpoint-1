@@ -108,3 +108,44 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (min-width:700px){
+  nav{
+    justify-content: space-between;
+  }
+  #first-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #first-banner > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills--title{
+    display: none;
+  }
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .column{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:700px){
+  .desktop{
+    display: none;
+  }
+  .skills--title{
+    display: none;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+  }
+}
