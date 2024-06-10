@@ -11,6 +11,17 @@
   --textAlign: center;
 }
 
+#fileInput, #submitBtn {
+  display: none;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner img {
+  width: 10%;
+}
 img {
   max-width: 100%;
 }
@@ -26,6 +37,7 @@ p {
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+
 }
 
 .desktop {
@@ -61,6 +73,7 @@ p {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
+
 
 .column {
   border-left: var(--styledBorder);
@@ -107,4 +120,42 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen  and (min-width:700px){
+  header nav {
+    justify-content: space-between;
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+.skills--title {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+  .desktop img{
+    display: none;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .skills--title {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
 }

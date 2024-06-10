@@ -15,10 +15,25 @@ exemple du résultat final :
   ...
   ["26-1", "26-2", "26-3", ..., "26-100"]
 ]
+  https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Arrays
+  https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
 */
 
 function theaterSieges() {
-  // Your code here !
+  // tableau avec le resultat;
+  const result = [];
+  // boucle pour les colonnes
+  for (let i=0; i < 26, i++){
+    const salleColumns = [i];
+    salleColumns.toString();
+  }
+  // boucle pour les sieges
+  for (let index=0; index < 100; index++){
+    const columnSeats = [index];
+    columnSeats.toString();
+  }
+  // push des sieges dans le tableau result
+  result.push(`${salleColumns} + "-" + ${columnSeats}`);
 }
 
 module.exports = theaterSieges;

@@ -8,7 +8,13 @@ Rappel : Pour vérifier si un nombre est divisible par un autre, tu peux utilise
 */
 
 function isLeapYear(year) {
-  // Your code here !
+  // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Remainder
+// si année est à la fois divisble par 4 et non divsble par 100 OU année est divisble par 400
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 module.exports = isLeapYear;
