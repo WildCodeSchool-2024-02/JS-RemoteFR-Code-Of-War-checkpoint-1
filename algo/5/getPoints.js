@@ -10,9 +10,23 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 
 ["1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:3"]
 */
+const results = require("./getPoints.spec")
 
 function getPoints(results) {
-  // Your code here !
+
+  let points = 0
+  results.forEach(result => {
+    let [nous, eux] = result.split(':').map(Number);
+
+    if (nous > eux) {
+      points += 3
+    }
+    else if (nous === eux) { points++ }
+    else { points += 0 }
+  });
+
+  return points
+
 }
 
 module.exports = getPoints;
