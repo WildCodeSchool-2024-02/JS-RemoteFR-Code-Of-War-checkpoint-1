@@ -22,6 +22,10 @@ function changeBackground(promptText) {
     pinkBackground.forEach(pinkBackground => {
         pinkBackground.style.backgroundColor = promptText;
     })
+    let pinkText =document.querySelectorAll(".pink-text");
+    pinkText.forEach(pinkText => {
+        pinkText.style.color = promptText;
+    })
 }
 
 button.addEventListener("click", () => {
