@@ -11,8 +11,14 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 ["1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:3"]
 */
 
-function getPoints(results) {
-  // Your code here !
-}
+const getPoints = (results) => results.reduce((score, result) => {
+    const splitResult = result.split(":");
+    const scoreTeam = Number(splitResult[0]);
+    const scoreOpposing = Number(splitResult[1]);
+
+    if (scoreTeam > scoreOpposing) return score += 3;
+    else if (scoreTeam === scoreOpposing) return score += 1;
+    return score;
+  }, 0)
 
 module.exports = getPoints;
