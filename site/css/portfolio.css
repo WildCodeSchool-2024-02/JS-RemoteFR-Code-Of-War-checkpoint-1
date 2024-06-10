@@ -79,7 +79,7 @@ p {
   background-color: var(--lightWildColor);
 }
 
-#name-button{
+#name-button, #modify-button{
   background-color: #dbb7d8;
   border: white solid 1px;
   border-radius: 4px;
@@ -88,7 +88,7 @@ p {
   cursor: pointer;
 }
 
-#name-button:hover{
+#name-button:hover, #modify-button:hover{
   background-color: #e6ecf8;
   color: black;
 }

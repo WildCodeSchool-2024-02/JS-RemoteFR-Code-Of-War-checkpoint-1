@@ -36,3 +36,17 @@ function linksChange(){
 }
 linksChange();
 
+// Step 6
+
+const listeDevTools = document.querySelectorAll("#front-dev-tools li");
+const listeButton = document.querySelector("#modify-button");
+const newTools = ["VSCode", "Github", "Terminal"];
+
+listeButton.addEventListener("click", changeTxt);
+
+function changeTxt(){
+    for (let i = 0; i < listeDevTools.length; i++){
+        listeDevTools[i].textContent = newTools[i];
+    }
+}
+
