@@ -24,9 +24,15 @@ const persons = [
 ];
 
 */
-
+const findSeniors = require("./findSeniors");
 function findSeniors(persons) {
-  // Your code here !
+  const WebDev = [];
+  const dataAnalyst = [];
+  
+  const seniorsWebDev = persons.filter(person => person.job === 'web dev' && person.experience >= 5);
+  const seniorDataAnalyst = persons.filter(person => person.job === 'data analyst' && person.experience >= 5);
+
+  return [webDev, dataAnalyst];
 }
 
 module.exports = findSeniors;

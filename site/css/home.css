@@ -5,7 +5,6 @@ body {
 
 header nav ul {
   display: flex;
-  justify-content: flex-end;
   width: 100%;
   align-items: center;
 }
