@@ -11,6 +11,10 @@
   --textAlign: center;
 }
 
+button {
+  all: unset
+}
+
 img {
   max-width: 100%;
 }
@@ -111,6 +115,12 @@ p {
 
 .avatar {
   width: 300px;
+}
+
+.chooseName {
+  background-color: purple;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 
