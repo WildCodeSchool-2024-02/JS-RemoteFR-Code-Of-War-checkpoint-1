@@ -46,3 +46,25 @@ const listes = document.querySelectorAll('.liste');
 for(let liste of listes){
     liste.style.color = "#750ff7";
 }
+
+// STEP 6
+
+const colFront = document.querySelector('.col-front');
+const textsModify = document.querySelectorAll('.list-modify');
+
+const newBtn = document.createElement('button');
+newBtn.classList.add('btn-modify');
+newBtn.textContent = "Modify";
+colFront.appendChild(newBtn);
+
+newBtn.addEventListener('click', () => {
+    for(let i = 0; i <= textsModify.length;i++){
+        if(i === 0){
+            textsModify[i].textContent = "VSCode";
+        }else if(i === 1){
+            textsModify[i].textContent = "Github";
+        }else{
+            textsModify[i].textContent = "Terminal";
+        }
+    }
+})

@@ -120,6 +120,14 @@ p {
   color: #fff;
 }
 
+.btn-modify{
+  height: 2.5rem;
+  border-radius: var(--radius);
+  border: 2px solid #fff ;
+  background-color: var(--lightWildColor);
+  color: #fff;
+}
+
 @media screen and (min-width:700px){
   nav{
     justify-content: space-between;
