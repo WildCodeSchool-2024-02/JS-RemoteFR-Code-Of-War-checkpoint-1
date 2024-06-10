@@ -23,7 +23,13 @@ descriptionButton.addEventListener("click", () => {
     pinkText.forEach(element => {
         element.style.color = newColor;
     });
+    const linkColor = document.querySelectorAll("a");
+    linkColor.forEach(link => {
+        link.style.color = newColor;
+    });
+
     const nameChange = document.getElementById("firstname");
     nameChange.textContent = prompt("Enter your name");
     nameChange.style.color = "white";
 });
+
