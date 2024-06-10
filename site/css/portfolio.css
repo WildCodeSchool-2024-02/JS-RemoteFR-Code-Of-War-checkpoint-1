@@ -28,10 +28,44 @@ p {
   margin-bottom: var(--gutter);
 }
 
+nav {
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+@media screen and (width < 700px) {
+  .title>img {
+    display: none;
+  }
+
+  nav {
+    justify-content: start;
+  }
+
+  .skills {
+    margin-top: calc(var(--gutter) * -2);
+    border-radius: var(--radius);
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -55,11 +89,14 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+
 }
 
 .column {
@@ -71,6 +108,9 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+
+
+
 }
 
 .column:first-of-type {
@@ -95,6 +135,25 @@ p {
 .projects a {
   color: var(--purple);
 }
+
+.disabled {
+  opacity: 50%;
+}
+
+.projects>h2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.projects :nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
 
 .box {
   width: 25%;
