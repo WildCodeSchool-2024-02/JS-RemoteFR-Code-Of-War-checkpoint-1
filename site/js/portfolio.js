@@ -11,6 +11,6 @@ newButton.type = "button";
 newButton.textContent = "Modify text and color";
 newBtn.appendChild(newButton);
 
-newButton.addEventListener("Click", () => {
-    firstname = prompt("Enter your name :")
+newButton.addEventListener("click", () => {
+    const clickOn = prompt("Enter your name :");
 });
