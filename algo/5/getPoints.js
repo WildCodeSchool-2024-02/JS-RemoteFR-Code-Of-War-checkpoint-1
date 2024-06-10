@@ -13,6 +13,21 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 
 function getPoints(results) {
   // Your code here !
+  
+  let totalPoints = 0;
+
+  results.forEach(result => {
+    const [ourScore, theirScore] = result.split(':').map(Number);
+
+    if (ourScore > theirScore) {
+      totalPoints += 3; // Victoire
+    } else if (ourScore === theirScore) {
+      totalPoints += 1; // Nul
+    } // Défaite donne 0 points, donc rien à ajouter
+  });
+
+  return totalPoints;
+  
 }
 
 module.exports = getPoints;
