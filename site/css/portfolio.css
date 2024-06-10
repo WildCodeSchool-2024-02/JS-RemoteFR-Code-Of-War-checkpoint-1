@@ -11,6 +11,17 @@
   --textAlign: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 img {
   max-width: 100%;
 }
@@ -52,12 +63,16 @@ p {
 }
 
 .skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
 }
 
 .skills--title {
+  display: none;
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
@@ -96,6 +111,10 @@ p {
   color: var(--purple);
 }
 
+.projects .disabled {
+  opacity: 50%;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -107,4 +126,15 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
