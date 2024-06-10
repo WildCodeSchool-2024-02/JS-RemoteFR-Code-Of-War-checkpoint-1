@@ -11,6 +11,7 @@ function switchAvatar(){
 const nameButton = document.getElementById("name-button");
 const changingName = document.getElementById("firstname");
 const descriptionSection = document.getElementsByClassName("description pink-bg");
+const pinkText = document.querySelectorAll(".pink-text");
 
 nameButton.addEventListener("click", nameChange);
 
@@ -23,6 +24,9 @@ function nameChange(){
     changingName.classList.add("whiteTxt");
     for (let i = 0; i < descriptionSection.length; i++) {
         descriptionSection[i].style.backgroundColor = yourColor;
+    }
+    for (let i = 0; i < pinkText.length; i++) {
+        pinkText[i].style.color = yourColor;
     }
 }
 
