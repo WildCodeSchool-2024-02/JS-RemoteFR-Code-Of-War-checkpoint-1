@@ -8,6 +8,7 @@ const btnUser = document.querySelector('.btnChange');
 const nameUser = document.getElementById('firstname');
 const backColor = document.querySelectorAll('.pink-bg');
 const styleColor = document.querySelectorAll('.pink-text');
+const anchorColor = document.querySelectorAll('a');
 
 
 btnUser.addEventListener("click", () => {
@@ -22,8 +23,11 @@ btnUser.addEventListener("click", () => {
         styleColor.forEach(styleColor => {
             styleColor.style.color = `${color}`;
         })
-
+          anchorColor.forEach(anchorColor => {
+            anchorColor.style.color = `${color}`;
+          })
     });
 
+  
 
 })
