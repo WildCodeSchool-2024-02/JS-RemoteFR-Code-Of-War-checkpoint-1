@@ -108,3 +108,43 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+/* ETAPES DU CHECKPOINT */
+
+.firstBanner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#avatar {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10rem;
+}
+
+
+@media (min-width: 700px) {
+  header>nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .firstBanner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #avatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
