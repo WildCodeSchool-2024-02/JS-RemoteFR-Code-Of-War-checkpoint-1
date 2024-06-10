@@ -123,6 +123,24 @@ p {
   border-radius: 0.5rem;
 }
 
+.modify {
+  background-color: purple;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #e6ecf8;
+}
+
+.add {
+  background-color: purple;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #e6ecf8;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
 
 @media (min-width: 700px) {
   nav {
@@ -151,6 +169,24 @@ p {
     width: 35vw;
   }
 
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 700px) {
