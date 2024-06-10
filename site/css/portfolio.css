@@ -156,6 +156,18 @@ p {
     flex: 1;
     height: 60vh;
   }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects h2,
+  .projects p {
+    display: none;
+  }
+
 }
 
 @media (max-width: 700px) {
