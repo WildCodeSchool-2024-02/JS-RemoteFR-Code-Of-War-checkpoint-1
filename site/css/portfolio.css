@@ -108,3 +108,56 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+.disabled {
+  opacity: 0.5;
+}
+
+
+@media (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .firstBanner {
+    text-align: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .block_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .projects {
+    text-align: center;
+  }
+}
+
+@media (max-width: 699px) {
+  .desktop {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
