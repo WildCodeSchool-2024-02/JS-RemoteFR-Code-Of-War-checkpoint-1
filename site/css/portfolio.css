@@ -57,6 +57,7 @@ p {
   padding: 0 10%;
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .skills--title {
