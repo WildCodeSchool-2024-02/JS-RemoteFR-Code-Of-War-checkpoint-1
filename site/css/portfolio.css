@@ -79,7 +79,7 @@ p {
   background-color: var(--lightWildColor);
 }
 
-#name-button, #modify-button{
+#name-button, #modify-button, #dev-tools-button{
   background-color: #dbb7d8;
   border: white solid 1px;
   border-radius: 4px;
@@ -88,7 +88,7 @@ p {
   cursor: pointer;
 }
 
-#name-button:hover, #modify-button:hover{
+#name-button:hover, #modify-button:hover, #dev-tools-button:hover{
   background-color: #e6ecf8;
   color: black;
 }
@@ -186,3 +186,7 @@ p {
   }
 }
 
+#dev-tools-text {
+  height: 2rem;
+  border-radius: 4px;
+}

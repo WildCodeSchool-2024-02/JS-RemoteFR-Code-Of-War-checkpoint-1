@@ -50,3 +50,18 @@ function changeTxt(){
     }
 }
 
+// Step 7
+
+const devToolsList = document.querySelector("#dev-tools-list");
+const devToolsInput = document.querySelector("#dev-tools-text");
+const devToolsBtn = document.querySelector("#dev-tools-button");
+
+devToolsBtn.addEventListener("click", () => {
+    const newDevTools = devToolsInput.value;
+    const devToolsItem = document.createElement("li");
+    devToolsItem.textContent = newDevTools;
+    devToolsList.appendChild(devToolsItem);
+    devToolsInput.value = "";
+});
+
+
