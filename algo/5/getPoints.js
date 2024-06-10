@@ -12,7 +12,17 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 */
 
 function getPoints(results) {
-  // Your code here !
+  let compteur = 0;
+
+  for (const result of results){
+    const [a,b] = result.split(":").map(Number);
+    if (a > b) {
+      compteur = compteur + 3;
+    } else if (a === b) {
+      compteur = compteur + 1;
+    }
+  }
+  return compteur;
 }
 
 module.exports = getPoints;
