@@ -112,6 +112,13 @@ p {
 .disabled{
   opacity: 0.5;
 }
+#btn-invite{
+  height: 3.5rem;
+  border-radius: var(--radius);
+  border: 2px solid #fff ;
+  background-color: var(--lightWildColor);
+  color: #fff;
+}
 
 @media screen and (min-width:700px){
   nav{
