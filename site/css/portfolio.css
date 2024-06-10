@@ -10,6 +10,43 @@
 
   --textAlign: center;
 }
+/* MEDIA FOR SCREEN BIGGER THAN 700PX */
+
+@media only screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner-avatar {
+    text-align: center;
+  }
+
+  article.skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  article.skills > h2 {
+    display: none;
+  }
+  .projects .title-projects {
+    text-align: center;
+  }
+  .projects-cards {
+    display: flex;
+    
+  }
+
+
+}
+/* Media querie for screens smaller than 700px*/
+
+@media only screen and (max-width: 700px) {
+  figure.desktop {
+    display: none;
+  }
+}
 
 img {
   max-width: 100%;
@@ -50,11 +87,13 @@ p {
 .pink-bg {
   background-color: var(--lightWildColor);
 }
-
+/* making forntend card go top*/
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .skills--title {
@@ -107,4 +146,9 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+/* Applie opacitie to projects in development */
+.disabled {
+  opacity: 0.5;
 }

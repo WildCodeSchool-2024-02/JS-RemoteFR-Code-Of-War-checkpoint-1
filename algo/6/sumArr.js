@@ -11,6 +11,15 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 
 function sumArr(arrayA, arrayB) {
   // Your code here !
+  // let result = arrayA.map((item, ix) => item + arrayB[ix])
+  // return result;
+  let sumArr = [];
+  for (let i = 0; i < arrayA.length; i++) {
+    for (let j = 0; j < arrayB.length; j++) {
+      sumArr = arrayA[i] + arrayB[j]
+    }
+    return sumArr;
+  }
 }
 
 module.exports = sumArr;
