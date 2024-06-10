@@ -39,5 +39,10 @@ btnChangeText.addEventListener('click', () => {
 //     spanFirstName.style.color = "white";
 // })
 
+//STEP 5 
 
+const listes = document.querySelectorAll('.liste');
 
+for(let liste of listes){
+    liste.style.color = "#750ff7";
+}
