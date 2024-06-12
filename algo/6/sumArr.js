@@ -9,8 +9,6 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) should return ["4", "11", "
 sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "12", "5", "5"]
 */
 
-function sumArr(arrayA, arrayB) {
-  // Your code here !
-}
+function sumArr(arrayA, arrayB) {}
 
 module.exports = sumArr;
